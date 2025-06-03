@@ -41,14 +41,12 @@
 </head>
 <body>
 
-  <h2>Belegte Chat Slots bei Ghost Script: <span id="slotCount">3</span></h2>
+  <h2>Belegte Chat Slots bei Ghost Script: <span id="slotCount">0</span></h2>
 
   <div>
     <strong>Aktuelle Nutzer:</strong>
     <ul id="nameList">
-      <li>Lena</li>
-      <li>Max</li>
-      <li>Chris</li>
+      <!-- leer am Start -->
     </ul>
   </div>
 
@@ -67,8 +65,8 @@
     const errorMsg = document.getElementById("errorMsg");
 
     // Startwerte
-    let takenSlots = 3;
-    let names = ["Lena", "Max", "Chris"];
+    let takenSlots = 0;
+    let names = [];
 
     nameForm.addEventListener("submit", function (e) {
       e.preventDefault();
